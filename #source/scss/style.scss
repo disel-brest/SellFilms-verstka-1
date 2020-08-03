@@ -1,0 +1,126 @@
+@import "./reset.scss";
+
+/*======================Общие стили=============================*/
+$colorBlue:#1c569c;
+
+h1 {
+	font-size: 25px;
+	color: #fff;
+}
+
+body {
+	background-color: $colorBlue;
+	font-family: "Myriad Pro", Arial;
+}
+
+.wrapper {
+	background-color: #fff;
+	max-width: 1300px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+.icon {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+/*==========================Header================================*/
+header {
+	background-color: $colorBlue;
+	color: #fff;
+	font-size: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+}
+
+.header {
+	&__logo {
+		display: flex;
+	}
+	&__image {
+		height: 70px;
+		width: 100px;
+	}
+	&__image img{
+		height: 70px;
+		width: auto;
+	}
+	&__title {
+		display: flex;
+		align-items: center;
+	}
+	&__title h1 {
+		font-weight: 700;
+	}
+	&__search {
+		margin-left: 50px;
+	}
+	&__cart {
+		position: relative;
+		cursor: pointer;
+		margin-left: auto;
+		margin-right: 50px;
+	}
+	&__cart-icon {
+		background-image: url(../../images/shopping-cart4.png);
+		position: absolute;
+		height: 26px;
+		width: 30px;
+		top: -7px;
+		right: 65px;
+	}
+	&__bell-notification {
+		background-color: #4894ec;
+		position: absolute;
+		top: -17px;
+		left: -45px;
+		width: 20px;
+		height: 20px;
+		border-radius: 10px;
+		font-size: 10px;
+		font-weight: bold;
+		line-height: 23px;
+		z-index: 1;
+		text-align: center;
+	}
+	&__signIn {
+		border-radius: 5px;
+		border: 1px solid white;
+		padding: 8px 15px;
+		cursor: pointer;
+		&:hover {
+			background-color: #fff;
+    		color: #4894ec;
+		}
+	}
+}
+
+.form {
+	color: yellow;
+	&__search {
+
+	}
+	&__input {
+		width: 100%;
+		display: block;
+		padding: 10px 60px 10px 30px;
+		// height: 50px;
+		border-radius: 25px;
+		// color: #a9abb3;
+		font-size: 14px;
+		border: 1px solid #d2d6e0;
+		&:focus {
+			color: #131418;
+		}
+	}
+}
+
+
+/*============================Main=================================*/
+.contain {
+	display: flex;
+	padding: 30px 30px;
+}
