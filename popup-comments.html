@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Prepros</title>
+	<meta http-equiv ="Content-type" content ="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width"><!-- Адаптивность -->
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<a class='header__logo' href="#">
+				<div class="header__image">
+					<img src="images/logo.svg">
+				</div>
+				<h1>Продажа фильмов</h1>
+			</a>
+			<div class="header__search">
+				<div class="form">
+					<input class="form__input" type="text" placeholder="Поиск...">
+				</div>
+			</div>
+			<div class="header__cart">
+				<span class="header__bell-notification">0</span>
+				<span class="header__cart-icon icon"></span>
+				Корзина
+			</div>
+			<button class="btn-bg">Войти</button>
+		</header>
+
+		<div class="inner-container">
+			<div class="inner-top">
+				<div class="inner-top__price">Цена: 500 руб</div>
+				<button class="btn-bg">Добавить в корзину</button>
+			</div>
+			<div class="inner-content">
+				<div class="inner-content__photo">
+					<img src="images/1.jpg" alt="#">
+				</div>
+				<div class="inner-content__info">
+					<h2 class="inner-content__title">Сокровище Счастливчика (2017)</h2>
+					<div class="inner-content__rate">Рейтинг: 56%</div>
+					<div class="inner-content__option">Жанр: <span>Боевик</span></div>
+					<div class="inner-content__option">Страна: <span>Зарубежный</span></div>
+					<div class="inner-content__option">Оплата: <span>нал</span></div>
+					<div class="inner-content__description">Студентка по имени Эмили переезжает из города в деревню, к своему дедушке. Там она заботится о бабушкином коне Счастливчике и пытается помочь скорбящему дедушке обрести Господа. В процессе она обзаводится новым другом по имени Джейк. Узнав, что бабушка Эмили умерла в поисках сокровища, друзья пытаются найти редкую золотую монету, десятилетиями ускользавшую от кладоискателей. История о любви, приключении и интриге, "Сокровище Счастливчика" - это яркое напоминание о том, что утраченные вещи можно снова найти.</div>
+					<div class="inner-content__id">id: 1</div>
+				</div>
+			</div>
+			<div class="inner-comments">
+				<h2 class="inner-comments__title">Отзывы</h2>
+				<div class="inner-comments__item green">
+					<div class="inner-comments__photo">
+						<img src="images/noavatar.png" alt="#">
+					</div>
+					<div class="inner-comments__info">
+						<div class="inner-comments__name">semaden</div>
+						<div class="inner-comments__date">12.09.2013</div>
+						<div class="inner-comments__content">Сокровище Счастливчика. Хороший семейный фильм, спокойный, без напряга</div>
+					</div>
+				</div>
+				<div class="inner-comments__item red">
+					<div class="inner-comments__photo">
+						<img src="images/noavatar.png" alt="#">
+					</div>
+					<div class="inner-comments__info">
+						<div class="inner-comments__name">semaden</div>
+						<div class="inner-comments__date">12.09.2013</div>
+						<div class="inner-comments__content">Сокровище Счастливчика. Хороший семейный фильм, спокойный, без напряга</div>
+					</div>
+				</div>
+				<button class="btn-bg">Добавить отзыв</button>
+			</div>
+		</div>
+
+		<!-- popup-comments -->
+		<div id="popup" class="popup open">
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="##" class="popup__close">x</a>     <!-- но обычно span -->                  
+					<div class="popup__title">Добавить отзыв</div>
+					<div class="popup__text">
+						на фильм <strong>Значит, война (2011)</strong>
+					</div>
+					<div class="popup__select">
+						<select class="input">
+							<option value='Положительный отзыв'>Положительный отзыв</option>
+							<option value='Отрицательный отзыв'>Отрицательный отзыв</option>
+						</select>
+					</div>
+					<div class="popup__textarea">
+						<textarea class="input"></textarea>
+					</div>
+					<button class="btn-bg">Отправить</button>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer__image">
+				<img src="images/logo.svg">
+			</div>
+			<h1>Продажа фильмов</h1>
+		</footer>
+	</div>
+	<!-- <script src="js/main.js"></script> -->
+</body>
+</html>
